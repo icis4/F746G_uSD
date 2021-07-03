@@ -153,10 +153,10 @@ FRESULT scan_files(FILE* fout, char* path) {
 			dt.time = fno.ftime;
 			if (fno.fattrib & AM_DIR) { /* It is a directory */
 				fprintf(fout,
-						"%-16s<DIR> %04d-%02d-%02d %02d:%02d:%02d\n", fno.fname,
+						"%-16s <DIR> %04d-%02d-%02d %02d:%02d:%02d\n", fno.fname,
 						dt.Year, dt.Month, dt.Day, dt.Hours, dt.Minutes, dt.Seconds);
 			} else { /* It is a file. */
-				fprintf(fout, "%-16s%ld%s %04d-%02d-%02d %02d:%02d:%02d\n", fno.fname,
+				fprintf(fout, "%-16s %ld%s %04d-%02d-%02d %02d:%02d:%02d\n", fno.fname,
 						(fno.fsize > 5000) ? fno.fsize / 1024 : fno.fsize,
 						(fno.fsize > 5000) ? "KB" : "B",
 						dt.Year, dt.Month, dt.Day, dt.Hours, dt.Minutes, dt.Seconds);
