@@ -1,8 +1,8 @@
 /*
- * task_uart.c
+ * task_main.c
  *
- *  Created on: 27.04.2018
- *      Author: Ivaylo Ilchev iic@melexis.com
+ *  Created on: 04.04.2021
+ *      Author: Ivaylo Ilchev
  */
 
 /* Includes ------------------------------------------------------------------*/
